@@ -3,6 +3,16 @@
 #!system=ios
 
 [URL Rewrite]
+^https?:\/\/.+\.googlevideo\.com\/.+&oad 
+^https?:\/\/.+\.googlevideo\.com\/.+ctier 
+^https?:\/\/youtubei\.googleapis\.com\/youtubei\/.+ad_ 
+^https?:\/\/youtubei\.googleapis\.com\/youtubei\/.+log_ 
+^https?:\/\/.+\.youtube\.com\/get_midroll_ 
+^https?:\/\/premiumyva\.appspot\.com\/vmclickstoadvertisersite 
+^https?:\/\/.+\.youtube\.com\/api\/stats\/ads 
+^https?:\/\/.+\.youtube\.com\/api\/stats\/.+adformat 
+^https?:\/\/.+\.youtube\.com\/pagead\/ 
+^https?:\/\/.+\.youtube\.com\/ptracking 
 (^https?:\/\/[\w-]+\.googlevideo\.com\/.+)(ctier=L)(&.+) $1$3 302
 ^https?:\/\/[\w-]+\.googlevideo\.com\/.+&(oad|ctier) - reject
 
