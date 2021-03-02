@@ -14,6 +14,8 @@
 ^https?:\/\/.+\.youtube\.com\/pagead\/ reject-tinygif
 ^https?:\/\/.+\.youtube\.com\/ptracking reject-tinygif
 ^(http|https):\/\/[\w-]+\.googlevideo\.com\/[\w?=&.]+(&oad|ctier) reject-200
+(^https?:\/\/[\w-]+\.googlevideo\.com\/.+)(ctier=L)(&.+) $1$3 302
+^https?:\/\/[\w-]+\.googlevideo\.com\/.+&(oad|ctier) - reject
 
 [MITM]
 hostname = %APPEND% *.googlevideo.com
