@@ -5,3 +5,6 @@
 [Script]
 # 如果您是 YouTube Premium，请不要开启此模块。
 youtube_ad = type=http-request,pattern=^https?:\/\/.+?\.googlevideo\.com\/.+&(oad|ctier)=(?!A),script-path= https://raw.githubusercontent.com/guajie/Surge/master/Scripts/YouTube.js
+
+[MITM]
+hostname = %APPEND% *.googlevideo.com
