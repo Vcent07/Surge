@@ -3,18 +3,17 @@
 #!system=ios
 
 [URL Rewrite]
-^https?:\/\/.+\.googlevideo\.com\/.+&oad - reject
-^https?:\/\/.+\.googlevideo\.com\/.+ctier - reject 
-^https?:\/\/youtubei\.googleapis\.com\/youtubei\/.+ad_ - reject
-^https?:\/\/youtubei\.googleapis\.com\/youtubei\/.+log_ - reject
-^https?:\/\/.+\.youtube\.com\/get_midroll_ - reject
-^https?:\/\/premiumyva\.appspot\.com\/vmclickstoadvertisersite - reject
-^https?:\/\/.+\.youtube\.com\/api\/stats\/ads - reject
-^https?:\/\/.+\.youtube\.com\/api\/stats\/.+adformat - reject
-^https?:\/\/.+\.youtube\.com\/pagead\/ - reject
-^https?:\/\/.+\.youtube\.com\/ptracking - reject
-(^https?:\/\/[\w-]+\.googlevideo\.com\/.+)(ctier=L)(&.+) $1$3 302
-^https?:\/\/[\w-]+\.googlevideo\.com\/.+&(oad|ctier) - reject
+^https?:\/\/.+\.googlevideo\.com\/.+&oad url reject-tinygif
+^https?:\/\/.+\.googlevideo\.com\/.+ctier url reject-tinygif
+^https?:\/\/youtubei\.googleapis\.com\/youtubei\/.+ad_ url reject-tinygif
+^https?:\/\/youtubei\.googleapis\.com\/youtubei\/.+log_ url reject-tinygif
+^https?:\/\/.+\.youtube\.com\/get_midroll_ url reject-tinygif
+^https?:\/\/premiumyva\.appspot\.com\/vmclickstoadvertisersite url reject-tinygif
+^https?:\/\/.+\.youtube\.com\/api\/stats\/ads url reject-tinygif
+^https?:\/\/.+\.youtube\.com\/api\/stats\/.+adformat url reject-tinygif
+^https?:\/\/.+\.youtube\.com\/pagead\/ url reject-tinygif
+^https?:\/\/.+\.youtube\.com\/ptracking url reject-tinygif
+^(http|https):\/\/[\w-]+\.googlevideo\.com\/[\w?=&.]+(&oad|ctier) url reject-200
 
 [MITM]
 hostname = %APPEND% *.googlevideo.com
