@@ -19,6 +19,7 @@ Core functionalities:
 1. Conversion among various formats.
 2. Subscription formatting.
 3. Collect multiple subscriptions in one URL.
+4. 完成之后最好点击一下这个网址 https://gist.github.com/ 检查是否成功备份
 ## 1. Subscription Conversion
 
 ### Supported Input Formats
