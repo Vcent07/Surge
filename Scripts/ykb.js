@@ -1,17 +1,25 @@
 /*
-
-Quantumult X
-
 Unlocks by Guajie
 
+************************
+Surge 4.2.0+ 脚本配置:
+************************
+
+[Script]
+ykb = type=http-response,pattern=https://api.yikaobang.com.cn/*,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/guajie/Surge/master/Scripts/ykb.js,script-update-interval=0
+
+[MITM] 
+hostname= api.yikaobang.com.cn
+
+************************
+QuantumultX 脚本配置:
+************************
+
 [rewrite_remote]
-
-#医考帮
 https://api.yikaobang.com.cn/* url script-response-body https://raw.githubusercontent.com/guajie/Surge/master/Scripts/ykb.js
-https:\/\/api\.yikaobang\.com\.cn\/*
 
-[mitm]
-hostname = api.yikaobang.com.cn,
+[mitm] 
+hostname= api.yikaobang.com.cn
 
 */
 
