@@ -8,6 +8,7 @@ Unlocks by Guajie
 
 #医考帮
 https://api.yikaobang.com.cn/* url script-response-body https://raw.githubusercontent.com/guajie/Surge/master/Scripts/ykb.js
+https:\/\/api\.yikaobang\.com\.cn\/*
 
 [mitm]
 hostname = api.yikaobang.com.cn,
