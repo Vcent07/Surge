@@ -1,12 +1,9 @@
 /*
 * ==UserScript==
 * @ScriptName        东京奥运会🏅金牌榜
-* @Author            Cuttlefish
-* @TgChannel         https://t.me/ddgksf2021
 * @WechatID          墨鱼手记
 * @UpdateTime        20210725
 * @ScriptFunction    实时查看金牌排行榜
-* @ScriptURL         https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/OlympicRanking.js
 * ==/UserScript==
 【QuantumultX】 :
 [task_local]
