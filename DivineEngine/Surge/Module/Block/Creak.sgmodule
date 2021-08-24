@@ -37,4 +37,4 @@ Yyzs = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/(i|newd
 
 
 [MITM]
-hostname = %APPEND% *.kuwo.cn,weixin110.qq.com,testflight.apple.com,license.pdfexpert.com,api.yibaobang.com.cn,newdrugs.dxy.cn
+hostname = %APPEND% *.kuwo.cn,weixin110.qq.com,testflight.apple.com,license.pdfexpert.com,api.yikaobang.com.cn,newdrugs.dxy.cn
