@@ -66,5 +66,33 @@ weixin open = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/
 Tf download = type=http-request,requires-body=1,max-size=0,pattern=^https?:\/\/testflight\.apple\.com\/v2\/accounts\/.*\/apps\/\d*/builds/\d*/install,script-path=https://raw.githubusercontent.com/guajie/Surge/master/Scripts/TF_Downloadnew.js
 # ------
 
+# ---(By guajie)---
+# > Wechat
+WeChat = type=http-request,pattern=^https://mp\.weixin\.qq\.com/mp/getappmsgad,script-path=https://raw.githubusercontent.com/guajie/Surge/master/Scripts/WeChat.js
+# ------
+
+# ---(By guajie)---
+# > China_unicom
+china_unicom = type=http-response,requires-body=1,max-size=0,pattern=^https?://m.client.10010.com/uniAdmsInterface/getHomePageAd,script-path=https://raw.githubusercontent.com/guajie/Surge/master/Scripts/china_unicom.js
+# ------
+
+# ---(By guajie)---
+# > Pdf_Expert7
+Pdf_Expert7 = type=http-response,requires-body=1,max-size=0,pattern=^https:\/\/license\.pdfexpert\.com\/api\/1.0\/pdfexpert6\/subscription\/(check|refresh),script-path=https://raw.githubusercontent.com/guajie/Surge/master/Scripts/PDFExpert7.js
+# ------
+
+# ---(By guajie)---
+# > Ykb
+ykb = type=http-response,requires-body=1,max-size=0,pattern=https://api.yikaobang.com.cn/*,script-path=https://raw.githubusercontent.com/guajie/Surge/master/Scripts/ykb.js
+# ------
+
+# ---(By guajie)---
+# > yyzs
+Yyzs = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/(i|newdrugs)\.dxy\.cn\/(snsapi\/username\/|app\/user\/(pro\/stat\?|init\?timestamp=)),script-path=https://raw.githubusercontent.com/guajie/Surge/master/Scripts/yyzs.js
+# ------
+
+
+
+
 [MITM]
-hostname = %APPEND% api.weibo.cn,mapi.weibo.com,*.uve.weibo.com,www.zhihu.com,api.zhihu.com,app-api.smzdm.com,homepage-api.smzdm.com,haojia-api.smzdm.com,haojia.m.smzdm.com,baike-api.smzdm.com,s-api.smzdm.com,zhiyou.m.smzdm.com,app.bilibili.com,*.kuwo.cn,weixin110.qq.com,testflight.apple.com
+hostname = %APPEND% api.weibo.cn,mapi.weibo.com,*.uve.weibo.com,www.zhihu.com,api.zhihu.com,app-api.smzdm.com,homepage-api.smzdm.com,haojia-api.smzdm.com,haojia.m.smzdm.com,baike-api.smzdm.com,s-api.smzdm.com,zhiyou.m.smzdm.com,app.bilibili.com,*.kuwo.cn,weixin110.qq.com,testflight.apple.com,mp.weixin.qq.com,m.client.10010.com,license.pdfexpert.com,api.yibaobang.com.cn,newdrugs.dxy.cn
