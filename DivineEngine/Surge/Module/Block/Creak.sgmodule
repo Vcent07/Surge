@@ -1,9 +1,40 @@
-#!name=Block iOS Software Update
-#!desc=屏蔽 iOS 系统更新
+#!name=Creak Apps
+#!desc=Creak Apps with Script for Surge iOS
 #!system=ios
 
-[Rule]
-DOMAIN,mesu.apple.com,REJECT
-DOMAIN,gdmf.apple.com,REJECT
-DOMAIN,updates-http.cdn-apple.com,REJECT
-DOMAIN,xp.apple.com,REJECT
+[Script]
+# ---(By guajie)---
+# > kuwo
+KuWoMusicDownload = type=http-request,pattern=^https?:\/\/musicpay\.kuwo.cn\/music\.pay\?uid=\d+,script-path=https://raw.githubusercontent.com/guajie/Surge/master/Scripts/KuWoMusicDownload.js
+Kuwo = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/vip1\.kuwo\.cn\/(vip\/v2\/user\/vip|vip\/spi/mservice),script-path=https://raw.githubusercontent.com/guajie/Surge/master/Scripts/Kuwo.js
+Kuwo换肤 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/vip1\.kuwo\.cn\/(vip\/v2\/theme),script-path=https://raw.githubusercontent.com/guajie/Surge/master/Scripts/themekuwo.js
+# ------
+
+# ---(By guajie)---
+# > wenxin110
+weixin open = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/weixin110\.qq\.com\/cgi-bin\/mmspamsupport-bin\/newredirectconfirmcgi,script-path=https://raw.githubusercontent.com/guajie/Surge/master/Scripts/weixin110.js
+# ------
+
+# ---(By guajie)---
+# > TestFlight
+Tf download = type=http-request,requires-body=1,max-size=0,pattern=^https?:\/\/testflight\.apple\.com\/v2\/accounts\/.*\/apps\/\d*/builds/\d*/install,script-path=https://raw.githubusercontent.com/guajie/Surge/master/Scripts/TF_Downloadnew.js
+# ------
+
+# ---(By guajie)---
+# > Pdf_Expert7
+Pdf_Expert7 = type=http-response,requires-body=1,max-size=0,pattern=^https:\/\/license\.pdfexpert\.com\/api\/1.0\/pdfexpert6\/subscription\/(check|refresh),script-path=https://raw.githubusercontent.com/guajie/Surge/master/Scripts/PDFExpert7.js
+# ------
+
+# ---(By guajie)---
+# > Ykb
+ykb = type=http-response,requires-body=1,max-size=0,pattern=https://api.yikaobang.com.cn/*,script-path=https://raw.githubusercontent.com/guajie/Surge/master/Scripts/ykb.js
+# ------
+
+# ---(By guajie)---
+# > yyzs
+Yyzs = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/(i|newdrugs)\.dxy\.cn\/(snsapi\/username\/|app\/user\/(pro\/stat\?|init\?timestamp=)),script-path=https://raw.githubusercontent.com/guajie/Surge/master/Scripts/yyzs.js
+# ------
+
+
+[MITM]
+hostname = %APPEND% *.kuwo.cn,weixin110.qq.com,testflight.apple.com,license.pdfexpert.com,api.yibaobang.com.cn,newdrugs.dxy.cn
