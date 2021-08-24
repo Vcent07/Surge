@@ -220,8 +220,6 @@ URL-REGEX,^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=start,REJECT-TI
 
 # J
 # > JD - api.m.jd.com,img*.360buyimg.com
-# ^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=start - reject
-^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=queryMaterialAdverts - reject
 ^https?:\/\/(bdsp-x|dsp-x)\.jd\.com\/adx\/ - reject
 ^https?:\/\/img\d+\.360buyimg\.com\/jddjadvertise\/ - reject
 # > JiaXiaoeDianTong - api.jxedt.com
