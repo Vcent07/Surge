@@ -1,0 +1,21 @@
+#!name=定时任务
+#!desc=签到、提醒等定时任务  @guajie
+
+
+
+[Script]
+吾爱签到 = type=cron,cronexp=38 11 * * *,script-path=https://raw.githubusercontent.com/guajie/Surge/master/Scripts/52pojie.js
+
+Display jd historical price = type=http-response,requires-body=1,max-size=0,pattern=^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig),script-path=https://raw.githubusercontent.com/guajie/Surge/master/Scripts/jd_price_lite2021.js
+
+京豆变动通知 = type=cron,cronexp=20 9 * * *,script-path=https://raw.githubusercontent.com/guajie/Surge/master/Scripts/jd_bean_change.js
+
+爱奇艺签到 = type=cron,cronexp=45 11 * * *,script-path=https://raw.githubusercontent.com/guajie/Surge/master/Scripts/iQIYI.js
+
+
+
+
+
+[MITM]
+hostname = api.m.jd.com, 
+
