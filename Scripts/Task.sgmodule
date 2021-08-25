@@ -17,5 +17,5 @@ Display jd historical price = type=http-response,requires-body=1,max-size=0,patt
 
 
 [MITM]
-hostname = api.m.jd.com, 
+hostname = api.m.jd.com
 
