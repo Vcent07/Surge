@@ -32,7 +32,8 @@ ykb = type=http-response,requires-body=1,max-size=0,pattern=https://api.yikaoban
 
 # ---(By guajie)---
 # > yyzs
-Yyzs = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/(i|newdrugs)\.dxy\.cn\/(snsapi\/username\/|app\/user\/(pro\/stat\?|init\?timestamp=|pro\/isUserProAndNotExpired)),script-path=https://raw.githubusercontent.com/guajie/Surge/master/Scripts/yyzs2021.js
+Yyzs = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/(i|newdrugs)\.dxy\.cn\/(snsapi\/username\/|app\/user\/(pro\/stat\?|init\?timestamp=)),script-path=https://raw.githubusercontent.com/guajie/Surge/master/Scripts/yyzs2021.js
+#http-response ^https?:\/\/(i|newdrugs)\.dxy\.cn\/(snsapi\/username\/|app\/user\/(pro\/stat\?|init\?timestamp=)) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/yyzs.js
 # ------
 
 # ---(By guajie)---
