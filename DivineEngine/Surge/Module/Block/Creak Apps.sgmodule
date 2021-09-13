@@ -40,6 +40,15 @@ Yyzs = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/(i|newd
 Display jd historical price = type=http-response,requires-body=1,max-size=0,pattern=^https?://api\.m\.jd\.com/(client\.action|api)\?functionId=(wareBusiness|serverConfig|basicConfig|lite_wareBusiness|pingou_item),script-path=https://raw.githubusercontent.com/guajie/Surge/master/Scripts/jd_price_lite2021.js
 # ------
 
+# ---(By guajie)---
+# > Scanner Pro
+Scanner Pro = type=http-response,pattern=^https?:\/\/license\.pdfexpert\.com\/api\/2\.0\/scanner\/subscription\/refresh,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/guajie/Surge/master/Scripts/ScannerPro.js
+# ------
+
+# ---(By guajie)---
+# > PolarisOffice Unlock Annual Subscriptions
+PolarisOffice Unlock Annual Subscriptions = type=http-response,pattern=^https?:\/\/api\.polarisoffice\.com\/api\/.*\/account\/userinfo,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/guajie/Surge/master/Scripts/PolarisOffice.js
+# ------
 
 [MITM]
-hostname = %APPEND% *.kuwo.cn,weixin110.qq.com,testflight.apple.com,license.pdfexpert.com,api.yikaobang.com.cn,newdrugs.dxy.cn,api.m.jd.com
+hostname = %APPEND% *.kuwo.cn,weixin110.qq.com,testflight.apple.com,license.pdfexpert.com,api.yikaobang.com.cn,newdrugs.dxy.cn,api.m.jd.com,*.polarisoffice.com
