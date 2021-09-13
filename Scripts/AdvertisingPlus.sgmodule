@@ -6,6 +6,13 @@
 # > Douyin(<= 16.2.0) By Choler
 ^https?:\/\/api.*\.amemv\.com\/aweme\/v\d\/(?!(comment|namek)) https://aweme.snssdk.com/aweme/v1/ header
 
+#!name=Block YouTube Advertising
+#!desc=跳过 YouTube 视频片头广告，Premium 勿用。
+#!system=ios
+(^https?:\/\/[\w-]+\.googlevideo\.com\/.+)(ctier=L)(&.+) $1$3 302
+^https?:\/\/[\w-]+\.googlevideo\.com\/.+&(oad|ctier) - reject
+
+
 [Map Local]
 # ---(By blackmatrix7)---
 # 知乎其他广告拦截
@@ -60,12 +67,6 @@ china_unicom = type=http-response,requires-body=1,max-size=0,pattern=^https?://m
 # ------
 
 
-#!name=Block YouTube Advertising
-#!desc=跳过 YouTube 视频片头广告，Premium 勿用。
-#!system=ios
-[URL Rewrite]
-(^https?:\/\/[\w-]+\.googlevideo\.com\/.+)(ctier=L)(&.+) $1$3 302
-^https?:\/\/[\w-]+\.googlevideo\.com\/.+&(oad|ctier) - reject
 
 
 
