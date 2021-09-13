@@ -10,6 +10,8 @@
 
 爱奇艺签到 = type=cron,cronexp=45 11 * * *,script-path=https://raw.githubusercontent.com/guajie/Surge/master/Scripts/iQIYI.js
 
+AppMonitor = type=cron,cronexp=0 12 * * *,script-path=https://raw.githubusercontent.com/guajie/Surge/master/Scripts/AppMonitor.js
+
 
 
 
