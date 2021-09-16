@@ -42,7 +42,7 @@ Display jd historical price = type=http-response,requires-body=1,max-size=0,patt
 
 # ---(By guajie)---
 # > Scanner Pro
-Scanner Pro = type=http-response,pattern=^https?:\/\/license\.pdfexpert\.com\/api\/2\.0\/scanner\/subscription\/refresh,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/guajie/Surge/master/Scripts/ScannerPro.js
+Scanner Pro = type=http-response,pattern=^https?:\/\/license\.pdfexpert\.com\/api\/2\.0\/scanner\/subscription\/refresh,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/guajie/Surge/master/Scripts/sp.js
 # ------
 
 # ---(By guajie)---
