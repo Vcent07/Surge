@@ -1,7 +1,0 @@
-{
-  "name": "My_Task",
-  "description": "墨鱼手记",
-  "task": [
-    	"30 8,17 * * 1-5 https://raw.githubusercontent.com/yichahucha/surge/master/clock_in.js, tag=每日打卡提醒",
-    	]
-}
