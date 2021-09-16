@@ -22,7 +22,7 @@ Tf download = type=http-request,requires-body=1,max-size=0,pattern=^https?:\/\/t
 
 # ---(By guajie)---
 # > Pdf_Expert7
-Pdf_Expert7 = type=http-response,requires-body=1,max-size=0,pattern=^https:\/\/license\.pdfexpert\.com\/api\/1.0\/pdfexpert6\/subscription\/(check|refresh),script-path=https://raw.githubusercontent.com/guajie/Surge/master/Scripts/PDFExpert7.js
+Pdf_Expert7 = type=http-response,requires-body=1,max-size=0,pattern=^https:\/\/license\.pdfexpert\.com\/api\/1.0\/pdfexpert6\/subscription\/(check|refresh),script-path=https://raw.githubusercontent.com/guajie/Surge/master/Scripts/pdfexpert.js
 # ------
 
 # ---(By guajie)---
