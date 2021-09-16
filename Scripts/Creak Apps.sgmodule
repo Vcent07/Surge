@@ -7,7 +7,7 @@
 # > kuwo
 KuWoMusicDownload = type=http-request,pattern=^https?:\/\/musicpay\.kuwo.cn\/music\.pay\?uid=\d+,script-path=https://raw.githubusercontent.com/guajie/Surge/master/Scripts/KuWoMusicDownload.js
 Kuwo = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/vip1\.kuwo\.cn\/(vip\/v2\/user\/vip|vip\/spi/mservice),script-path=https://raw.githubusercontent.com/guajie/Surge/master/Scripts/Kuwo.js
-Kuwo换肤 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/vip1\.kuwo\.cn\/(vip\/v2\/theme),script-path=https://raw.githubusercontent.com/guajie/Surge/master/Scripts/themekuwo.js
+Kuwo换肤 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/vip1\.kuwo\.cn\/(vip\/v2\/theme),script-path=https://raw.githubusercontent.com/guajie/Surge/master/Scripts/theme.js
 # ------
 
 # ---(By guajie)---
@@ -51,4 +51,4 @@ PolarisOffice Unlock Annual Subscriptions = type=http-response,pattern=^https?:\
 # ------
 
 [MITM]
-hostname = %APPEND% *.kuwo.cn,weixin110.qq.com,testflight.apple.com,license.pdfexpert.com,api.yikaobang.com.cn,newdrugs.dxy.cn,api.m.jd.com,*.polarisoffice.com
+hostname = %APPEND% vip1.kuwo.cn,musicpay.kuwo.cn,weixin110.qq.com,testflight.apple.com,license.pdfexpert.com,api.yikaobang.com.cn,newdrugs.dxy.cn,api.m.jd.com,*.polarisoffice.com
