@@ -52,12 +52,12 @@ PolarisOffice Unlock Annual Subscriptions = type=http-response,pattern=^https?:\
 
 # ---(By guajie)---
 # > JD | TB Price comparison
-http-response ^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig) requires-body=1,script-path=https://raw.githubusercontent.com/guajie/Surge/master/Scripts/JD_TB_Price_comparison.js
-http-request ^http://.+/amdc/mobileDispatch requires-body=1,script-path=https://raw.githubusercontent.com/guajie/Surge/master/Scripts/JD_TB_Price_comparison.js
-http-response ^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail requires-body=1,script-path=https://raw.githubusercontent.com/guajie/Surge/master/Scripts/JD_TB_Price_comparison.js
+JD = type=http-response,requires-body=1,max-size=0,pattern=^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig),script-path=https://raw.githubusercontent.com/guajie/Surge/master/Scripts/JD_TB_Price_comparison.js
+TB = type=http-request,requires-body=1,max-size=0,pattern=^http://.+/amdc/mobileDispatch,script-path=https://raw.githubusercontent.com/guajie/Surge/master/Scripts/JD_TB_Price_comparison.js
+TB = type=http-response,requires-body=1,max-size=0,pattern=^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail,script-path=https://raw.githubusercontent.com/guajie/Surge/master/Scripts/JD_TB_Price_comparison.js
 # ------
 
 
 
 [MITM]
-hostname = %APPEND% vip1.kuwo.cn,musicpay.kuwo.cn,weixin110.qq.com,testflight.apple.com,license.pdfexpert.com,api.yikaobang.com.cn,newdrugs.dxy.cn,api.m.jd.com,*.polarisoffice.com,trade-acs.m.taobao.com
+hostname = %APPEND% vip1.kuwo.cn,musicpay.kuwo.cn,weixin110.qq.com,testflight.apple.com,license.pdfexpert.com,api.yikaobang.com.cn,newdrugs.dxy.cn,api.m.jd.com,*.polarisoffice.com,trade-acs.m.taobao.com,
