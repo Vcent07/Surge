@@ -37,7 +37,7 @@ Yyzs = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/(i|newd
 
 # ---(By guajie)---
 # > Display jd historical price
-#Display jd historical price = type=http-response,requires-body=1,max-size=0,pattern=^https?://api\.m\.jd\.com/(client\.action|api)\?functionId=(wareBusiness|serverConfig|basicConfig|lite_wareBusiness|pingou_item),script-path=https://raw.githubusercontent.com/guajie/Surge/master/Scripts/jd_price_lite2021.js
+Display jd historical price = type=http-response,requires-body=1,max-size=0,pattern=^https?://api\.m\.jd\.com/(client\.action|api)\?functionId=(wareBusiness|serverConfig|basicConfig|lite_wareBusiness|pingou_item),script-path=https://raw.githubusercontent.com/guajie/Surge/master/Scripts/jd_price_lite2021.js
 # ------
 
 # ---(By guajie)---
