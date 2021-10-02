@@ -14,4 +14,4 @@
 
 
 [MITM]
-hostname = %APPEND% api.m.jd.com, www.52pojie.cn, iface?.iqiyi.com, hweb-mbf.huazhu.com
+hostname = %APPEND% ms.jr.jd.com, me-api.jd.com, api.m.jd.com, www.52pojie.cn, iface?.iqiyi.com, hweb-mbf.huazhu.com
