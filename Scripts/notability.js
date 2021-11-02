@@ -2,7 +2,7 @@
 Surge 4.2.0+ 脚本配置:
 ************************
 [Script]
-https://notability.com/subscriptions url script-response-body https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/notability.js
+https://notability.com/subscriptions url script-response-body https://raw.githubusercontent.com/guajie/Surge/master/Scripts/notability.js
 
 [MITM] 
 hostname= notability.com
