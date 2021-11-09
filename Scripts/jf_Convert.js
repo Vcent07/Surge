@@ -1,10 +1,10 @@
 /*
-README：https://github.com/yichahucha/surge/tree/master
-^https?://api\.m\.jd\.com/(client\.action|api)\?functionId=(wareBusiness|serverConfig|basicConfig|lite_wareBusiness|pingou_item)
+Loon/Surge:
+http-response ^https?://api\.m\.jd\.com/(client\.action|api)\?functionId=(wareBusiness|serverConfig|basicConfig|lite_wareBusiness|pingou_item) script-path=https://raw.githubusercontent.com/Tartarus2014/Script/master/jf_Convert.js, requires-body=true, timeout=10, tag=京粉转链
 
-# 如果京粉转链不生效，请检查重写是否订阅了神机去广告，然后把该订阅打开资源解析器，在订阅后面加#out=functionId即可；
-# 或者在本地重写[rewrite_local]添加一条 ^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=start url reject-200
-*/
+qx:
+^https?://api\.m\.jd\.com/(client\.action|api)\?functionId=(wareBusiness|serverConfig|basicConfig|lite_wareBusiness|pingou_item) url script-response-body https://raw.githubusercontent.com/Tartarus2014/Script/master/jf_Convert.js
+ */
 
 const path1 = "serverConfig";
 const path2 = "wareBusiness";
@@ -237,6 +237,7 @@ function dateFormat(cellval) {
 function tool() {
     const isSurge = typeof $httpClient != "undefined";
     const isQuanX = typeof $task != "undefined";
+    const isLoon = typeof $loon != "undefined";
     const node = (() => {
         if (typeof require == "function") {
             const request = require("request");
@@ -246,7 +247,7 @@ function tool() {
         }
     })();
     const notify = (title, subtitle, content, open_url) => {
-        if (isSurge) {
+        if (isSurge && !isLoon) {
             let opts = {};
             if (open_url) opts["url"] = open_url;
             if (JSON.stringify(opts) == "{}") {
