@@ -93,10 +93,10 @@ DingDing clock in
 hostname = license.pdfexpert.com
 
 # > 003 PdfExpert Pro 解锁会员权限（20210403）
-https:\/\/license\.pdfexpert\.com\/api\/.+\/pdfexpert6\/subscription\/(refresh$|check$) url script-response-body https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/pdfexpert.js
+https:\/\/license\.pdfexpert\.com\/api\/.+\/pdfexpert6\/subscription\/(refresh$|check$) url script-response-body https://raw.githubusercontent.com/guajie/Surge/master/Scripts/pdfexpert.js
 
 # > 002 Document Pro 解锁会员编辑功能 一次性解锁（20201108）
-https:\/\/license\.pdfexpert\.com\/api\/.+\/documents\/subscription\/(refresh$|check$) url script-response-body https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/documents.js
+https:\/\/license\.pdfexpert\.com\/api\/.+\/documents\/subscription\/(refresh$|check$) url script-response-body https://raw.githubusercontent.com/guajie/Surge/master/Scripts/documents.js
 
 # > 001 Scanner Pro 解锁会员权限 一次性解锁勿卸载（20201219）
-https:\/\/license\.pdfexpert\.com\/api\/.+\/scanner\/subscription\/(refresh$|check$) url script-response-body https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/sp.js
+https:\/\/license\.pdfexpert\.com\/api\/.+\/scanner\/subscription\/(refresh$|check$) url script-response-body https://raw.githubusercontent.com/guajie/Surge/master/Scripts/sp.js
