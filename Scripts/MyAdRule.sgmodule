@@ -93,7 +93,7 @@ https://guanyu.longfor.com/app-server/api/v1/main/start - reject
 https://support.you.163.com/appversync/check.do - reject
 
 # > 25 解除国区TF下载限制
-^https?:\/\/testflight\.apple\.com\/v2\/accounts\/.*\/apps\/\d*/builds/\d*/install - request-body storefrontId" : ".*" request-body storefrontId" : "143441-1,29"
+#^https?:\/\/testflight\.apple\.com\/v2\/accounts\/.*\/apps\/\d*/builds/\d*/install url request-body storefrontId" : ".*" request-body storefrontId" : "143441-1,29"
 
 # > 24 酷我音乐去开屏广告 - rich.kuwo.cn,*.kwcdn.kuwo.cn,mobilead.kuwo.cn
 ^https?:\/\/rich\.kuwo\.cn\/AdService\/kaiping\/.+ - reject
@@ -119,9 +119,9 @@ https:\/\/appconf\.mail\.163\.com\/mmad\/get\.do - reject
 https://dl-cu-hz.lechange.cn/oms-online/advertisementPush/* - reject
 
 # > 17 京东开屏广告（此条规则会影响京东比价显示，使其失效）
-^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start - reject
-^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=queryMaterialAdverts - reject
-^https?:\/\/(bdsp-x|dsp-x)\.jd\.com\/adx\/ - reject
+#^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start - reject
+#^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=queryMaterialAdverts - reject
+#^https?:\/\/(bdsp-x|dsp-x)\.jd\.com\/adx\/ - reject
 
 # > 16 红版报开屏广告@ddgksf2013
 https://fbchina.flipchina.cn/v2/ad/query/* - reject
