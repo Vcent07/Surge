@@ -1,4 +1,6 @@
-// ==UserScript==
+#!name=MyAdRule
+#!desc=去开屏广告
+#!system=ios
 // @UpdateTime        20211226
 
 [MITM]
