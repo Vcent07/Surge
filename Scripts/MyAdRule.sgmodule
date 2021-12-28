@@ -6,39 +6,39 @@ hostname = %APPEND% api.gotokeep.com,api.kkmh.com,*.chelaile.net.cn,api-mifit.hu
 
 
 
-
+[URL Rewrite]
 # > 46 Keep开屏广告屏蔽@ddgksf2013
-https://api.gotokeep.com/op-engine-webapp/v1/ad url reject
-https://api.gotokeep.com/ads/v1/ads/preload url reject
+https://api.gotokeep.com/op-engine-webapp/v1/ad - reject
+https://api.gotokeep.com/ads/v1/ads/preload - reject
 
 # > 45 快看漫画
-^https?:\/\/api.kkmh.com\/v\d\/(ad|advertisement)\/ url reject
+^https?:\/\/api.kkmh.com\/v\d\/(ad|advertisement)\/ - reject
 
 # > 44 车来了
-^https?:\/\/api.chelaile.net.cn\/adpub\/ url reject
-^https?:\/\/api.chelaile.net.cn\/goocity\/advert\/ url reject
-^https?:\/\/atrace.chelaile.net.cn\/adpub\/ url reject
-^https?:\/\/atrace.chelaile.net.cn\/exhibit\?&adv_image url reject
-^https?:\/\/pic1.chelaile.net.cn\/adv\/ url reject
+^https?:\/\/api.chelaile.net.cn\/adpub\/ - reject
+^https?:\/\/api.chelaile.net.cn\/goocity\/advert\/ - reject
+^https?:\/\/atrace.chelaile.net.cn\/adpub\/ - reject
+^https?:\/\/atrace.chelaile.net.cn\/exhibit\?&adv_image - reject
+^https?:\/\/pic1.chelaile.net.cn\/adv\/ - reject
 
 # > 43 小米
-^https?:\/\/api.jr.mi.com\/v1\/adv\/ url reject
-^https?:\/\/api.m.mi.com\/.+\/app\/start url reject
-^https?:\/\/api-mifit.huami.com\/discovery\/mi\/discovery\/(homepage_ad|sleep_ad|sport_ad|sport_summary_ad|sport_training_ad|step_detail_ad|training_video_ad)\? url reject
+^https?:\/\/api.jr.mi.com\/v1\/adv\/ - reject
+^https?:\/\/api.m.mi.com\/.+\/app\/start - reject
+^https?:\/\/api-mifit.huami.com\/discovery\/mi\/discovery\/(homepage_ad|sleep_ad|sport_ad|sport_summary_ad|sport_training_ad|step_detail_ad|training_video_ad)\? - reject
 
 # > 42 冠寓开屏广告@ddgksf2013
-https://guanyu.longfor.com/app-server/api/v1/main/start url reject
+https://guanyu.longfor.com/app-server/api/v1/main/start - reject
 
 # > 41 小红书
-^https:\/\/www\.xiaohongshu\.com\/api\/sns\/v1\/ads\/apple\/record* url reject
-^https:\/\/www\.xiaohongshu\.com\/api\/sns\/v1\/tag\/ads_engage* url reject
-^https:\/\/www\.xiaohongshu\.com\/api\/sns\/v1\/ads\/resource* url reject
-^https:\/\/pages\.xiaohongshu\.com\/data\/native\/matrix_switches* url reject
+^https:\/\/www\.xiaohongshu\.com\/api\/sns\/v1\/ads\/apple\/record* - reject
+^https:\/\/www\.xiaohongshu\.com\/api\/sns\/v1\/tag\/ads_engage* - reject
+^https:\/\/www\.xiaohongshu\.com\/api\/sns\/v1\/ads\/resource* - reject
+^https:\/\/pages\.xiaohongshu\.com\/data\/native\/matrix_switches* - reject
 
 # > 40 闲鱼
-^https:\/\/gw.alicdn.com\/mt\/ url reject
-^https:\/\/gw.alicdn.com\/tfs\/.+\d{3,4}-\d{4} url reject
-^https:\/\/gw.alicdn.com\/tps\/.+\d{3,4}-\d{4} url reject
+^https:\/\/gw.alicdn.com\/mt\/ - reject
+^https:\/\/gw.alicdn.com\/tfs\/.+\d{3,4}-\d{4} - reject
+^https:\/\/gw.alicdn.com\/tps\/.+\d{3,4}-\d{4} - reject
 
 # > 39 饿了么
 ^https?:\/\/elemecdn.com\/.+\/sitemap url reject
